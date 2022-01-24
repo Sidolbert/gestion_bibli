@@ -19,21 +19,21 @@ try{
     //on va utiliser une requête préparée
     $sql = 'INSERT INTO `livre` (`isbn`, `titre`, `editeur`, `collection`, `serie`, `date_parution`, `format`, `couverture`, `langue`, `avis_biblio`) 
             VALUES (:isbn, :titre, :editeur, :collection, :serie, :date_par, :format, :couv, :lang, :avis)';
-    $stmt = $dbh->prepare($sql);
+    $sth = $dbh->prepare($sql);
     //on lie les contenus du formulaire et les valeurs de la requête préparée
     $tabParam = array();
     foreach ($_POST as $key => $value) {
-        $stmt->bindValue(":".$key,$value);
+        $sth->bindValue(":".$key,$value);
     }
     //on exécute la requête préparée
-    $rs = $stmt->execute();
+    $rs = $sth->execute();
 
     //syntaxe alternative : ajout du tableau entier en une fois à l'exécution
     // foreach ($_POST as $key => $value) {
     //     $tabParam[":" . $key] = $value;
     // }
     // //on exécute la requête préparée
-    // $rs = $stmt->execute($tabParam);
+    // $rs = $sth->execute($tabParam);
 
 }catch(PDOException $e){
     echo $e->getMessage();
