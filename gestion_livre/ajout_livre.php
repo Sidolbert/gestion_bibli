@@ -12,7 +12,7 @@ if(!isset($_POST["isbn"])){
 
 
 //on fait la connexion à la base
-require_once("./includes/connexion_bdd.php");
+require_once("../includes/connexion_bdd.php");
 
 try{
     //on va insérer des données dans la base
@@ -40,4 +40,5 @@ try{
     exit;
 }
 //si on est arrivé jusqu'ici l'insertion est un succès : on enchaîne avec l'affichage
-header("location:./affichage_livres.php");
+header("location:./affichage_livre.php");
+

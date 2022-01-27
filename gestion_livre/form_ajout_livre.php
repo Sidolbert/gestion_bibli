@@ -35,5 +35,8 @@
             <input type="submit" value="Enregistrer"></input>
         </form>
     </div>
+    <br/>
+    <br/>
+    <a href='../index.php'>retour à l'index</a>
 </body>
 </html>

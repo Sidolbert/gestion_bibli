@@ -2,7 +2,7 @@
 //afficher tous les livres de la table
 
 //on fait la connexion à la base
-require_once("./includes/connexion_bdd.php");
+require_once("../includes/connexion_bdd.php");
 
 //on fait une requête pour récupérer les infos
 $sql = "SELECT * FROM `livre`";
@@ -37,3 +37,7 @@ foreach($tabLivres as $livre){
     echo "</tr>";
 }
 echo "</tbody></table>";
+
+echo "<br/>
+<br/>
+<a href='../index.php'>retour à l'index</a>";

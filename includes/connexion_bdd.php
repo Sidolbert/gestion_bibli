@@ -1,6 +1,6 @@
 <?php
 //on crée une connexion à la BDD cible en fonction des identifiants inscrits en config
-require_once('./includes/config.php'); //on inclut NECESSAIREMENT et UNE SEULE FOIS config.php
+require_once('../includes/config.php'); //on inclut NECESSAIREMENT et UNE SEULE FOIS config.php
 $dsn = "mysql:host=$host;dbname=$dbname;charset=UTF8";
 
 //gestion d'exceptions : try/catch !

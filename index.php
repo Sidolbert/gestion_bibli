@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Bienvenue à la bibliothèque de Entrez_la_ville</h1>
-    <a href="./affichage_livres.php">Afficher les livres</a>
-    <a href="./form_ajout_livre.php">Ajouter un livre</a>
+    <a href="./gestion_livre/affichage_livre.php">Afficher les livres</a>
+    <a href="./gestion_livre/form_ajout_livre.php">Ajouter un livre</a>
+    <a href="./gestion_auteur/affichage_auteur.php">Afficher les auteurs</a>
+    <a href="./gestion_auteur/form_ajout_auteur.php">Ajouter un auteur</a>
 </body>
 </html>
